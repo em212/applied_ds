@@ -17,7 +17,7 @@ def io_hw(out_path):
     '''
     
     df = pd.read_csv('WHR2018.csv')
-    head_df = df.head()
+    head_df = df.head(5)
     head_df.to_csv(out_path)
     
     return df, head_df
