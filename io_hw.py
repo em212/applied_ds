@@ -3,6 +3,7 @@ import seaborn as sns
 import pdb
 
 def io_hw(out_path):
+    
     '''
     This is your homework assignment.
     You will be wrting a function here.
@@ -17,8 +18,7 @@ def io_hw(out_path):
     head_df: A new dataframe that is a copy of the first 5 lines of your dataframe, df.
     '''
     
-    df = pd.read_csv('./suvery 2.csv')
-    
+    df = pd.read_csv('./mental_health_survey.csv')
     head_df = df.head(5)
     head_df.to_csv(out_path)
     return df, head_df
