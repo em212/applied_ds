@@ -12,9 +12,8 @@ def io_hw(out_path):
     df: The full pandas dataframe of your dataset.
     head_df: A new dataframe that is a copy of the first 5 lines of your dataframe, df.
     '''
-    filepath = 'https://tufts.box.com/s/9auojpqiuidt5b8kb6e1vzmdy7l5h13l'
-    df = pd.read_csv(filepath)
-    head_df = df.head()
+    df = pd.read_csv('https://storage.googleapis.com/project-sunroof/csv/latest/project-sunroof-census_tract.csv')
+    head_df = df.head(5)
     output = head_df.to_csv(out_path)
     print(type(head_df))
     
