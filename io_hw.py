@@ -12,7 +12,7 @@ def io_hw(out_path):
     df: The full pandas dataframe of your dataset.
     head_df: A new dataframe that is a copy of the first 5 lines of your dataframe, df.
     '''
-    filepath = 'https://www.dropbox.com/s/egrqg5hcja6i5r5/ACSDATAFinal.csv?dl=0'
+    filepath = 'https://tufts.box.com/s/9auojpqiuidt5b8kb6e1vzmdy7l5h13l'
     df = pd.read_csv(filepath)
     head_df = df.head()
     output = head_df.to_csv(outpath)
