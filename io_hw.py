@@ -16,8 +16,8 @@ def io_hw(out_path):
     head_df: A new dataframe that is a copy of the first 5 lines of your dataframe, df.
     '''
     
-    df = pd.read_csv('WHR2018.csv')
-    head_df = df.head(5)
+    df = pd.read_csv('./WHR2018.csv')
+    head_df = df.head()
     head_df.to_csv(out_path)
     
     return df, head_df
