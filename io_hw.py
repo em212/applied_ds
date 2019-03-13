@@ -15,7 +15,7 @@ def io_hw(out_path):
     filepath = 'https://tufts.box.com/s/9auojpqiuidt5b8kb6e1vzmdy7l5h13l'
     df = pd.read_csv(filepath)
     head_df = df.head()
-    output = head_df.to_csv(outpath)
+    output = head_df.to_csv(out_path)
     print(type(head_df))
     
     return df, head_df
