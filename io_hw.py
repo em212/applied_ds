@@ -1,5 +1,6 @@
 import pandas as pd
 import seaborn as sns
+import test_io_hw
 
 def io_hw(out_path):
     '''
@@ -16,10 +17,11 @@ def io_hw(out_path):
     head_df: A new dataframe that is a copy of the first 5 lines of your dataframe, df.
     '''
 
-    df = pd.read_csv(out_path)
+    df = pd.read_csv("https://data.cityofnewyork.us/api/views/kku6-nxdu/rows.csv")
     head_df = df.head()
+    head_df.to_csv(out_path)
     
     return df, head_df
 
-data, header = io_hw("/Users/alexchristenson/Desktop/Applied Data Science/DataScienceProject/bitstamp.csv")
+data, header = io_hw("/Users/alexchristenson/Desktop/Applied Data Science/applied_ds/test.csv")
 print(header)
