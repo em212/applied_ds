@@ -22,6 +22,3 @@ def io_hw(out_path):
     head_df.to_csv(out_path)
     
     return df, head_df
-
-data, header = io_hw("/Users/alexchristenson/Desktop/Applied Data Science/applied_ds/test.csv")
-print(header)
