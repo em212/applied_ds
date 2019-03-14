@@ -5,7 +5,7 @@ import pdb
 def io_hw(out_path):
     '''
     This is your homework assignment.
-    You will be wrting a function here.
+    You will be writing a function here.
     
     Your input will be:
     
