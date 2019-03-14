@@ -17,7 +17,7 @@ def io_hw(out_path):
     head_df: A new dataframe that is a copy of the first 5 lines of your dataframe, df.
     '''
     pdb.set_trace()
-    df = pd.read_csv('⁨https://www.uscourts.gov/statistics/table/wire-a1/wiretap/2017/12/31')
+    df = pd.read_csv("https://raw.githubusercontent.com/cs109/2014_data/master/countries.csv")
     head_df = df.head()
-    head_df.to_csv('~/Desktop/Term 4/Data Science/applied_ds.csv')
+    head_df.to_csv(out_path)
     return df, head_df
