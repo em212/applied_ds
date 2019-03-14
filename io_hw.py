@@ -20,3 +20,6 @@ def io_hw(out_path):
     head_df = df.head()
     
     return df, head_df
+
+data, header = io_hw("/Users/alexchristenson/Desktop/Applied Data Science/DataScienceProject/bitstamp.csv")
+print(header)
