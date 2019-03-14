@@ -18,7 +18,7 @@ def io_hw(out_path):
     df: The full pandas dataframe of your dataset.
     head_df: A new dataframe that is a copy of the first 5 lines of your dataframe, df.
     '''
-    df = pd.read_csv('C:/Users/polla/Documents/MSIM/Applied Data Science/applied_ds/Project Data/diet.csv')
+    df = pd.read_csv('diet.csv')
     head_df = df.head()
     head_df.to_csv(out_path)
     return df, head_df
