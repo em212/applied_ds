@@ -47,3 +47,4 @@ def median(series):
     if i%2 == 0:
         return (series[(i/2)-1] + series[i/2])/2.0
     return series[i/2]
+
