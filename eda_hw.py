@@ -14,6 +14,7 @@ def average(series):
     See numpy documenation for implementation details:
     https://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html
     """
+    
     return float(sum(series))/len(series)
 
 def standard_deviation(series):
