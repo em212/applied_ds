@@ -14,16 +14,7 @@ def average(series):
 
     av = x/y
     return(av)
-    """
-    implements the average of a pandas series from scratch
-    suggested functions:
-    len(list)
-    sum(list)
-    you should get the same result as calling .mean() on your series
-    https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.mean.html
-    See numpy documenation for implementation details:
-    https://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html
-    """
+    
 
 def standard_deviation(series):
 
