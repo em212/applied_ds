@@ -22,6 +22,6 @@ def test_average():
 def test_standard_deviation():
     assert math.isclose(eda_hw.standard_deviation(test_data),
                         test_data.std(), abs_tol=0.001)
-
+#ddof=0
 def test_median():
     assert eda_hw.median(test_data) == test_data.median()
