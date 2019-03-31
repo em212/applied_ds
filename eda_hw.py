@@ -17,7 +17,7 @@ def average(series):
     pass
     avgnum = sum(series) / len(series)
     return avgnum
-    
+  
 
 def standard_deviation(series):
     """
