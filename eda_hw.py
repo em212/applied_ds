@@ -42,7 +42,7 @@ def standard_deviation(series):
         diffsquared = (val-average(series))**2
         sum_diffsquared = diffsquared + sum_diffsquared
         
-    stddev = ((sum_diffsquared)/len(series))**(1/2)
+    stddev = math.sqrt((sum_diffsquared)/(len(series)-1))
     return stddev
     pass
 
