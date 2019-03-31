@@ -5,7 +5,7 @@ import pdb
 import random
 from math import sqrt
 
-
+"v2"
 
 def average(series):
 
