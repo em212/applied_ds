@@ -3,41 +3,35 @@ import numpy as np
 import math
 import pdb
 
-def average(series):
-    """
-    implements the average of a pandas series from scratch
-    suggested functions:
-    len(list)
-    sum(list)
-    you should get the same result as calling .mean() on your series
-    https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.mean.html
-    See numpy documenation for implementation details:
-    https://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html
-    """
-    print("hello world!")
-    
-    pass
 
-def standard_deviation(series):
-    """
-    implements the sample standard deviation of a series from scratch
-    you may need a for loop and your average function
-    also the function math.sqrt
-    you should get the same result as calling .std() on your data
-    https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.std.html
-    See numpy documenation for implementation details:
-    https://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html
-    """
-    pass
+g = [3, 2, 1, 6, 5, 10, 9, 8, 7, 4]
 
-def median(series):
-    """
-    finds the median of the series from scratch
-    you may need to sort your values and use
-    modular division
-    this number should be the same as calling .median() on your data
-    See numpy documenation for implementation details:
-    https://docs.scipy.org/doc/numpy/reference/generated/numpy.median.html
-    https://pandas.pydata.org/pandas-docs/version/0.23.0/generated/pandas.Series.median.html
-    """
-    pass
+
+def average(x):
+    return sum(x) / len(x)
+
+
+print(average(g) == np.mean(g))
+
+
+def standard_deviation(x):
+    a = average(x)
+    s = 0
+    for i in x:
+        s = s + (i-a)**2
+
+    return math.sqrt(s/len(x)) # numpy seems to use (n) as the denom and not (n-1), shown when my boolean prints True
+
+
+print(round(standard_deviation(g), 20) == round(np.std(g), 20))
+
+
+def median(x):
+    if len(x) % 2 == 1:
+        return sorted(x)[len(x)//2]
+    else:
+        return sum(sorted(x)[(len(x) // 2) - 1: (len(x) // 2) + 1]) / 2
+
+
+print(median(g) == np.median(g))
+
