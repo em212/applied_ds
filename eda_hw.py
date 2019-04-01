@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import math
 import pdb
+import os
 
 def average(series):
     return sum(series)/len(series)
