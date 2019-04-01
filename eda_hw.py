@@ -20,7 +20,7 @@ def standard_deviation(x):
     for i in x:
         s = s + (i-a)**2
 
-    return math.sqrt(s/len(x)) # numpy seems to use (n) as the denom and not (n-1), shown when my boolean prints True
+    return math.sqrt(s/len(x)-1) # numpy seems to use (n) as the denom and not (n-1), shown when my boolean prints True
 
 
 print(round(standard_deviation(g), 20) == round(np.std(g), 20))
