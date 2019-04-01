@@ -13,8 +13,8 @@ def standard_deviation(series):
     return np.sqrt(y/(len(series)-1))
 
 def median(series):
-    s = series.sort_values(ascending=True)
+    s = sorted(series)
     if(len(series)%2==1):
-        return s[np.floor(len(s)/2)]
+        return s[int(np.floor(len(s)/2))]
     else:
-        return (s[len(s)/2] + s[len(s)/2-1])/2
+        return (s[int(len(s)/2)] + s[int(len(s)/2-1)])/2
