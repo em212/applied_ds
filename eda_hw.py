@@ -16,7 +16,6 @@ def average(series):
     """
     a1 = sum(series) / len(series)
     return a1
-    
 
 def standard_deviation(series):
     """
@@ -28,6 +27,7 @@ def standard_deviation(series):
     See numpy documenation for implementation details:
     https://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html
     """
+
     a1 = sum(series) / len(series)
     sum2 = 0
     for each in series:
@@ -35,6 +35,7 @@ def standard_deviation(series):
         sum2 = sum2 + pow(tempt,2)
     a2 = math.sqrt(sum2/(len(series)-1))
     return a2
+
 
 def median(series):
     """
@@ -46,6 +47,7 @@ def median(series):
     https://docs.scipy.org/doc/numpy/reference/generated/numpy.median.html
     https://pandas.pydata.org/pandas-docs/version/0.23.0/generated/pandas.Series.median.html
     """
+
     n = len(series)
     for j in range(n - 1):
         count = 0
@@ -62,3 +64,4 @@ def median(series):
         a3 = series[n//2]
         
     return a3
+
