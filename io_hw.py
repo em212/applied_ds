@@ -7,7 +7,8 @@ def io_hw(out_path):
     You will be wrting a function here.
     
     Your input will be:
-    
+    testing
+
     out_path: a string that is the path to output a csv of the head of your data.
     
     Your outputs will be:
