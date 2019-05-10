@@ -1,0 +1,6 @@
+,Country,Happiness score,Whisker-high,Whisker-low,Dystopia (1.92) + residual,Explained by: GDP per capita,Explained by: Social support,Explained by: Healthy life expectancy,Explained by: Freedom to make life choices,Explained by: Generosity,Explained by: Perceptions of corruption,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18,Unnamed: 19,Unnamed: 20,Unnamed: 21,Unnamed: 22,Unnamed: 23
+0,Finland,7.632000000000001,7.695,7.569,2.595,1.305,1.5919999999999999,0.8740000000000001,0.6809999999999999,0.192,0.39299999999999996,,,,,,,,,,,,,country
+1,Norway,7.593999999999999,7.657,7.53,2.383,1.456,1.5819999999999999,0.861,0.6859999999999999,0.28600000000000003,0.34,,,,,,,,,,,,,Finland
+2,Denmark,7.555,7.622999999999999,7.487,2.37,1.351,1.59,0.868,0.6829999999999999,0.284,0.408,,,,,,,,,,,,,
+3,Iceland,7.495,7.593,7.398,2.426,1.3430000000000002,1.6440000000000001,0.914,0.677,0.353,0.138,,,,,,,,,,,,,Denmark
+4,Switzerland,7.487,7.57,7.405,2.32,1.42,1.5490000000000002,0.927,0.66,0.256,0.35700000000000004,,,,,,,,,,,,,Iceland
